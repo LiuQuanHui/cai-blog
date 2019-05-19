@@ -22,5 +22,8 @@ public class UserController extends AbstractController {
     public ServerResponse login(String username, String password) {
         return userService.login(username, password);
     }
-
+    @RequestMapping("/home")
+    public String home() {
+    	return "login";
+    }
 }
