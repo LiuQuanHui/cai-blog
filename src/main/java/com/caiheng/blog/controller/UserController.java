@@ -26,4 +26,7 @@ public class UserController extends AbstractController {
     public String home() {
     	return "login";
     }
+    public String show() {
+    	return "";
+    }
 }
